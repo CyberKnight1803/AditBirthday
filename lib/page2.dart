@@ -1,3 +1,4 @@
+import 'package:adit_birthday/BottomOptions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 class page2 extends StatelessWidget {
@@ -7,14 +8,18 @@ class page2 extends StatelessWidget {
       backgroundColor: CupertinoColors.black,
       child: Container(
         width: double.infinity,
-        child: Column(
-          mainAxisAlignment:MainAxisAlignment.center ,
-          children: [
-            Image.asset('assets/adit_sun.jpg'),
+        child: GestureDetector(
+          onVerticalDragUpdate: (DragUpdateDetails details){
+            actionSheet(context);
+          },
+          child: Column(
+            mainAxisAlignment:MainAxisAlignment.center ,
+            children: [
+              Image.asset('assets/aditadit.jpg'),
 
-          ],
-        ),
-      ),
+            ],
+          ),
+        ),),
       navigationBar: CupertinoNavigationBar(
         backgroundColor: CupertinoColors.extraLightBackgroundGray,
         automaticallyImplyLeading: true,
@@ -22,7 +27,6 @@ class page2 extends StatelessWidget {
         trailing:
         GestureDetector(
           onTap: () => {
-
           },
           child: Icon(CupertinoIcons.forward, color: CupertinoColors.activeBlue),
         ),

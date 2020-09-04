@@ -14,7 +14,10 @@ class HomeScreen2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children:[
             Image.asset('assets/adit_sun.jpg'),
-            Text('You are our sun',style: CupertinoTheme.of(context).textTheme.actionTextStyle.copyWith(color: Colors.brown[400])),
+            Text('You are our sun',
+              //style: TextStyle(fontStyle: ),
+                ),
+              //style: CupertinoTheme.of(context).textTheme.navActionTextStyle.copyWith(color: Colors.brown[400]), ),
             Icon(CupertinoIcons.brightness_solid, color: Colors.yellowAccent,),
            Container(
              padding: EdgeInsets.all(10),

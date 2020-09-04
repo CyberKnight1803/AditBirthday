@@ -63,9 +63,16 @@ class page9 extends StatelessWidget {
 class page10 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return pageSkeleton(imgList[9], screenList[10], context, titleList[9]);
+    return pageSkeleton(imgList[9], forgotten(), context, titleList[9]);
   }
 }
+class forgotten extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return pageSkeleton('assets/drop object.jpg', page11(), context, 'we legit forgot to add this lol');
+  }
+}
+
 class page11 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

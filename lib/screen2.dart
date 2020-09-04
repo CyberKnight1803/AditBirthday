@@ -1,4 +1,4 @@
-import 'package:adit_birthday/page1.dart';
+import 'package:adit_birthday/pagex.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'dart:math';
@@ -14,10 +14,8 @@ class HomeScreen2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children:[
             Image.asset('assets/adit_sun.jpg'),
-            Text('You are our sun',
-              //style: TextStyle(fontStyle: ),
-                ),
-              //style: CupertinoTheme.of(context).textTheme.navActionTextStyle.copyWith(color: Colors.brown[400]), ),
+            Text('You are our sun',style:CupertinoTheme.of(context).textTheme.actionTextStyle.copyWith(color: CupertinoColors.white) ),
+
             Icon(CupertinoIcons.brightness_solid, color: Colors.yellowAccent,),
            Container(
              padding: EdgeInsets.all(10),
@@ -31,8 +29,8 @@ class HomeScreen2 extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => screenList[randomNumber]));
 
                 },
-              child: Text('Random Fact Generator', style: CupertinoTheme.of(context).textTheme.actionTextStyle.copyWith(color: Colors.brown[400])),
-              color: Colors.greenAccent,
+              child: Text('Random Fact Generator', style: CupertinoTheme.of(context).textTheme.actionTextStyle.copyWith(color: CupertinoColors.black)),
+              color: Colors.green[800],
 
             ),),
             Container(
@@ -42,8 +40,8 @@ class HomeScreen2 extends StatelessWidget {
                   context,
                   MaterialPageRoute(builder: (context) => page1()));
               },
-              child: Text('Read in chronological order', style: CupertinoTheme.of(context).textTheme.actionTextStyle.copyWith(color: Colors.brown[400])),
-              color: Colors.greenAccent,
+              child: Text('Read in chronological order', style: CupertinoTheme.of(context).textTheme.actionTextStyle.copyWith(color: CupertinoColors.black)),
+              color: Colors.green[800],
             ),),
             Container(
               padding: EdgeInsets.all(10),
@@ -52,8 +50,8 @@ class HomeScreen2 extends StatelessWidget {
                   context,
                   MaterialPageRoute(builder: (context) => index()));
               },
-              child: Text('Index', style: CupertinoTheme.of(context).textTheme.actionTextStyle.copyWith(color: Colors.brown[400])),
-              color: Colors.greenAccent,
+              child: Text('Index', style: CupertinoTheme.of(context).textTheme.actionTextStyle.copyWith(color: CupertinoColors.black)),
+              color: Colors.green[800],
             ))
         ]),),
 

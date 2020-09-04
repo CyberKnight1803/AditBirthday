@@ -10,7 +10,7 @@ class HomeScreen1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
          children:[
            Image.asset('assets/aditadit.jpg'),
-           Text('Happy Anniversary \nAdit Adit',
+           Text('Happy Anniversary \nAdit & Adit',
              style: CupertinoTheme.of(context).textTheme.navLargeTitleTextStyle.copyWith(color: CupertinoColors.white),
                textAlign: TextAlign.center, ),
            CupertinoButton(
@@ -19,8 +19,8 @@ class HomeScreen1 extends StatelessWidget {
                    context,
                    MaterialPageRoute(builder: (context) => HomeScreen2()));
              },
-             child: Text('Click me for your\n birthday surprise', style: CupertinoTheme.of(context).textTheme.actionTextStyle.copyWith(color: Colors.brown[400])),
-             color: CupertinoColors.systemYellow,
+             child: Text('Click me for your\n birthday surprise', style: CupertinoTheme.of(context).textTheme.navTitleTextStyle.copyWith(color: CupertinoColors.black)),
+             color: Colors.cyan[100],
            )
 
         ]),
